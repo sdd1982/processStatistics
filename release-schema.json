@@ -1,0 +1,49 @@
+{
+  "properties": {
+    "processStatistics": {
+      "title": "Process Statistics",
+      "description": "Estadísticas del proceso de contratación",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/processStatistic"
+      }
+    }
+  },
+  "definitions": {
+    "processStatistic": {
+      "title": "Process Statistic",
+      "description": "Estadística del proceso de contratación",
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "id",
+          "description": "Identificador único de la medida",
+          "type": [
+            "string",
+            "integer"
+          ]
+        },
+        "measure": {
+          "title": "Medida",
+          "description": "el nombre de la medida",
+          "type": "string"
+        },
+        "value": {
+          "title": "Value",
+          "description": "Valor",
+          "type": "integer"
+        },
+        "date": {
+          "title": "Date",
+          "description": "Fecha de la medición",
+          "type": "integer"
+        },
+        "notes": {
+          "title": "Notes",
+          "description": "notas para enteder qué es la medida",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

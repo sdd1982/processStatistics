@@ -1,0 +1,1 @@
+Estadísticas del proceso de contratación
