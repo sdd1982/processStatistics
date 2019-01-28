@@ -37,7 +37,7 @@
           "title": "Date",
           "description": "Fecha de la medición",
           "type": "string",
-		  "format": "date-time",
+		  "format": "date-time"
         },
         "notes": {
           "title": "Notes",
