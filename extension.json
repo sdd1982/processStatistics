@@ -1,11 +1,17 @@
 {
-	"name":{"en":"processStatistics"},
-	"description":{"es":"Estadísticas del proceso de contratación"},
-	"documentationUrl":{"es":"https://github.com/sdd1982/processStatistics/blob/master/README.md"},
-	"schemas": [
-		"release-schema.json"
-	],
-	"compatibility": [
-		"1.1"
-	]
+  "name": {
+    "en": "processStatistics"
+  },
+  "description": {
+    "es": "Estadísticas del proceso de contratación"
+  },
+  "documentationUrl": {
+    "es": "https://github.com/sdd1982/processStatistics/blob/master/README.md"
+  },
+  "schemas": [
+    "release-schema.json"
+  ],
+  "compatibility": [
+    "1.1"
+  ]
 }
