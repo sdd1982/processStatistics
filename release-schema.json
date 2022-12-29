@@ -5,15 +5,20 @@
       "description": "Estadísticas del proceso de contratación",
       "type": "array",
       "items": {
-        "$ref": "#/definitions/processStatistic"
+        "$ref": "#/definitions/ProcessStatistic"
       }
     }
   },
   "definitions": {
-    "processStatistic": {
+    "ProcessStatistic": {
       "title": "Process Statistic",
       "description": "Estadística del proceso de contratación",
       "type": "object",
+      "required": [
+        "id",
+        "measure",
+        "value"
+      ],
       "properties": {
         "id": {
           "title": "id",
@@ -36,13 +41,19 @@
         "date": {
           "title": "Date",
           "description": "Fecha de la medición",
-          "type": "string",
-		  "format": "date-time"
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
         },
         "notes": {
           "title": "Notes",
           "description": "notas para enteder qué es la medida",
-          "type": "string"
+          "type": [
+            "string",
+            "null"
+          ]
         }
       }
     }
